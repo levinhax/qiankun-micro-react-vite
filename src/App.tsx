@@ -1,5 +1,7 @@
 import React, { lazy, Suspense } from 'react'
 import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom'
+// import { BrowserRouter, Routes, Route } from 'react-router-dom'
+import { qiankunWindow } from 'vite-plugin-qiankun/dist/helper'
 import './styles/index.css'
 import { Divider } from 'antd'
 
@@ -8,7 +10,7 @@ const About = lazy(() => import('./views/About'))
 
 const RouteEle = () => {
   return (
-    <Router>
+    <Router basename={qiankunWindow.__POWERED_BY_QIANKUN__ ? '/micro3' : '/'}>
       <nav style={{ margin: 10 }}>
         <Link to="/" style={{ padding: 5 }}>
           Home
@@ -22,12 +24,26 @@ const RouteEle = () => {
       <Suspense fallback={null}>
         <Routes>
           <Route path="/" element={<Home />} />
+          <Route path="/home" element={<Home />} />
           <Route path="/about" element={<About />} />
         </Routes>
       </Suspense>
     </Router>
   )
 }
+
+// function RouteEle() {
+//   return (
+//     <BrowserRouter>
+//       <Suspense fallback={null}>
+//         <Routes>
+//           <Route path="/" element={<Home />} />
+//           <Route path="about" element={<About />} />
+//         </Routes>
+//       </Suspense>
+//     </BrowserRouter>
+//   )
+// }
 
 function App() {
   return (
