@@ -14,9 +14,14 @@ import { renderWithQiankun, qiankunWindow } from 'vite-plugin-qiankun/dist/helpe
 //   document.getElementById('root')
 // )
 
+let mainAppData = {}
+
 function render(props: any) {
   console.log('------ React 子应用渲染 ------')
   console.log(props)
+
+  mainAppData = props?.mainAppData
+  console.log('props mainAppData: ', mainAppData)
 
   const { container } = props
   ReactDOM.render(
