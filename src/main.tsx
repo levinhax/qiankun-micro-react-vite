@@ -1,7 +1,7 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
-import './index.css'
-import 'antd/dist/antd.css'
+import './styles/index.css'
+import './styles/app.css'
 import App from './App'
 
 // vite-plugin-qiankun helper
