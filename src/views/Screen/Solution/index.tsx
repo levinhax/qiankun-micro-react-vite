@@ -3,6 +3,8 @@ import TimeSelect from './components/timeSelect'
 import ComFrame from './components/frame'
 import VisitTrend from './components/visitTrend'
 import Bubble from './components/bubble'
+import OverView from './components/overview'
+import LevelPie from '../components/levelPie'
 import classes from './index.module.css'
 
 const Solution = () => {
@@ -29,7 +31,17 @@ const Solution = () => {
             <Bubble />
           </div>
           {/* 右边部分 */}
-          <div className={classes['body-top-side']}></div>
+          <div className={classes['body-top-side']}>
+            <div className={classes['body-item']}>
+              <OverView />
+            </div>
+
+            <div className={classes['body-item']}>
+              <ComFrame propTitle="数据分级分布TOP5">
+                <LevelPie />
+              </ComFrame>
+            </div>
+          </div>
         </div>
       </div>
     </div>

@@ -1,0 +1,66 @@
+.overview-container {
+  width: 100%;
+  height: 100%;
+  padding-top: 0.15rem;
+  padding-bottom: 0.1rem;
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  grid-template-rows: repeat(2, 50%);
+  grid-gap: 0.1rem;
+}
+
+.overview-item {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background-image: url('../../../../../assets/screen/solution/base.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  color: #ffffff;
+}
+
+.overview-item-number {
+  position: absolute;
+  left: 50%;
+  white-space: nowrap;
+  top: 21%;
+  transform: translateX(-50%);
+  font-size: 0.2rem;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.item-main-number {
+  position: relative;
+}
+
+.overview-item-icon {
+  position: absolute;
+  width: 0.25rem;
+  top: -65%;
+  left: 100%;
+}
+
+.total-number {
+  margin-left: 0.05rem;
+  font-size: 0.16rem;
+}
+
+.overview-item-name {
+  position: absolute;
+  text-align: center;
+  width: 100%;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  position: absolute;
+  bottom: 0.1rem;
+  font-size: 0.16rem;
+  font-family: Microsoft YaHei;
+  font-weight: bold;
+  line-height: 0.28rem;
+  opacity: 0.9;
+}

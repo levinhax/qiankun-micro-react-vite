@@ -53,13 +53,13 @@
 
 .body-item {
   width: 100%;
-  &:nth-of-type(1) {
-    height: 55%;
-  }
-  &:nth-of-type(2) {
-    height: 45%;
-    margin-top: 0.1rem;
-  }
+}
+.body-item:nth-of-type(1) {
+  height: 55%;
+}
+.body-item:nth-of-type(2) {
+  height: 45%;
+  margin-top: 0.1rem;
 }
 
 .tip-icon {
