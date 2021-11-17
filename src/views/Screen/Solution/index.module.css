@@ -1,0 +1,74 @@
+.screen-solution {
+  width: 100vw;
+  height: 100vh;
+  background-color: #01040d;
+  padding: 0 0.2rem 0.2rem;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+.screen-title {
+  position: relative;
+  width: 100%;
+  height: 0.8rem;
+  background: url('../../../assets/screen/solution/title-bg.png') no-repeat;
+  background-size: 100% 100%;
+}
+.screen-title p {
+  font-family: Microsoft YaHei;
+  font-weight: bold;
+  color: #ffffff;
+  font-size: 0.4rem;
+  line-height: 0.7rem;
+  letter-spacing: 0.1rem;
+  text-align: center;
+}
+.time-select {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 2.1rem;
+}
+
+.screen-body {
+  width: 100%;
+  flex: 1;
+  height: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.body-top {
+  width: 100%;
+  height: 65%;
+  display: flex;
+}
+.body-top-side {
+  width: 23%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.body-item {
+  width: 100%;
+  &:nth-of-type(1) {
+    height: 55%;
+  }
+  &:nth-of-type(2) {
+    height: 45%;
+    margin-top: 0.1rem;
+  }
+}
+
+.tip-icon {
+  margin-left: 0.1rem;
+  color: #d9e5ff;
+  cursor: pointer;
+}
+
+.body-top-center {
+  flex: 1;
+  width: 0;
+}

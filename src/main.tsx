@@ -2,6 +2,7 @@ import React from 'react'
 import ReactDOM from 'react-dom'
 import './styles/index.css'
 import './styles/app.css'
+import './styles/screen.less'
 import App from './App'
 
 // vite-plugin-qiankun helper

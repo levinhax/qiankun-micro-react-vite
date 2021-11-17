@@ -1,0 +1,74 @@
+{
+  "data": [
+    {
+      "id": 45,
+      "name": "浮点数",
+      "count": 69,
+      "sensitiveTableCount": 6,
+      "frequency": 0
+    },
+    {
+      "id": 3,
+      "name": "手机号",
+      "count": 51,
+      "sensitiveTableCount": 19,
+      "frequency": 0
+    },
+    {
+      "id": 51,
+      "name": "公司名称",
+      "count": 34,
+      "sensitiveTableCount": 17,
+      "frequency": 304048
+    },
+    {
+      "id": 1,
+      "name": "姓名",
+      "count": 28,
+      "sensitiveTableCount": 18,
+      "frequency": 1577173
+    },
+    {
+      "id": 35,
+      "name": "详细地址",
+      "count": 24,
+      "sensitiveTableCount": 17,
+      "frequency": 0
+    },
+    {
+      "id": 29,
+      "name": "IP地址",
+      "count": 22,
+      "sensitiveTableCount": 21,
+      "frequency": 5434630
+    },
+    {
+      "id": 30,
+      "name": "IPv6地址",
+      "count": 17,
+      "sensitiveTableCount": 18,
+      "frequency": 84225
+    },
+    {
+      "id": 33,
+      "name": "城市",
+      "count": 12,
+      "sensitiveTableCount": 17,
+      "frequency": 0
+    },
+    {
+      "id": 18,
+      "name": "银行卡",
+      "count": 12,
+      "sensitiveTableCount": 21,
+      "frequency": 2256579
+    },
+    {
+      "id": 36,
+      "name": "日期",
+      "count": 10,
+      "sensitiveTableCount": 13,
+      "frequency": 0
+    }
+  ]
+}

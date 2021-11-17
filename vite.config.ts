@@ -3,6 +3,10 @@ import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react'
 import qiankun from 'vite-plugin-qiankun'
 
+import path from 'path'
+
+const resolve = dir => path.resolve(process.cwd(), dir)
+
 // useDevMode 开启时与热更新插件冲突,使用变量切换
 const useDevMode = true
 
@@ -30,6 +34,11 @@ const baseConfig: UserConfig = {
       }
 		}
   },
+  resolve: {
+		alias: {
+			'@': resolve('src')
+		}
+	}
 }
 
 export default defineConfig(({ command, mode }) => {

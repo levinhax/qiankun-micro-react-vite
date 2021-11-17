@@ -3,6 +3,7 @@ import { IRouteProps } from './IRoute'
 
 const Home = lazy(() => import('../views/Home'))
 const About = lazy(() => import('../views/About'))
+const ScreenSolution = lazy(() => import('../views/Screen/Solution'))
 
 const routesMap: IRouteProps[] = [
   {
@@ -21,6 +22,15 @@ const routesMap: IRouteProps[] = [
     meta: {
       requiresAuth: false,
       title: '关于',
+    },
+  },
+  {
+    path: '/screen/solution',
+    exact: true,
+    component: ScreenSolution,
+    meta: {
+      requiresAuth: false,
+      title: '解决方案',
     },
   },
 ]

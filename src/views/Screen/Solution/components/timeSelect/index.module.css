@@ -1,0 +1,13 @@
+.time-select-container {
+  display: flex;
+  color: #d9e5ff;
+  align-items: center;
+}
+
+span {
+  white-space: nowrap;
+}
+
+.time-select {
+  width: 1.6rem;
+}
