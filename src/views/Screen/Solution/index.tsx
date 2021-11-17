@@ -5,6 +5,7 @@ import VisitTrend from './components/visitTrend'
 import Bubble from './components/bubble'
 import OverView from './components/overview'
 import LevelPie from '../components/levelPie'
+import RiskEvent from './components/riskEvent'
 import classes from './index.module.css'
 
 const Solution = () => {
@@ -43,6 +44,16 @@ const Solution = () => {
             </div>
           </div>
         </div>
+      </div>
+
+      <div className={classes['body-bottom']}>
+        <div className={classes['risk-event-item']}>
+          <ComFrame propTitle="敏感数据风险事件">
+            <RiskEvent />
+          </ComFrame>
+        </div>
+
+        <div className={classes['word-cloud-item']}></div>
       </div>
     </div>
   )
