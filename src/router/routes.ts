@@ -5,6 +5,8 @@ const Home = lazy(() => import('../views/Home'))
 const About = lazy(() => import('../views/About'))
 const ScreenSolution = lazy(() => import('../views/Screen/Solution'))
 
+import canvasRoutesMap from './modules/canvas'
+
 const routesMap: IRouteProps[] = [
   {
     path: '/',
@@ -33,6 +35,7 @@ const routesMap: IRouteProps[] = [
       title: '解决方案',
     },
   },
+  ...canvasRoutesMap,
 ]
 
 export default routesMap
