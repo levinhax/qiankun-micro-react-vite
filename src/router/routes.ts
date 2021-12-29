@@ -18,6 +18,15 @@ const routesMap: IRouteProps[] = [
     },
   },
   {
+    path: '/home',
+    exact: true,
+    component: Home,
+    meta: {
+      requiresAuth: false,
+      title: '首页',
+    },
+  },
+  {
     path: '/about',
     exact: true,
     component: About,
