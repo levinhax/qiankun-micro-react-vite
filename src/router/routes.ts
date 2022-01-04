@@ -3,8 +3,10 @@ import { IRouteProps } from './IRoute'
 
 const Home = lazy(() => import('../views/Home'))
 const About = lazy(() => import('../views/About'))
-const ScreenSolution = lazy(() => import('../views/Screen/Solution'))
+const ChartsIndex = lazy(() => import('../views/Charts'))
 
+import screenRoutesMap from './modules/screen'
+import echartsRoutesMap from './modules/echarts'
 import canvasRoutesMap from './modules/canvas'
 
 const routesMap: IRouteProps[] = [
@@ -36,14 +38,16 @@ const routesMap: IRouteProps[] = [
     },
   },
   {
-    path: '/screen/solution',
+    path: '/echarts',
     exact: true,
-    component: ScreenSolution,
+    component: ChartsIndex,
     meta: {
       requiresAuth: false,
-      title: '解决方案',
+      title: '图表',
     },
   },
+  ...screenRoutesMap,
+  ...echartsRoutesMap,
   ...canvasRoutesMap,
 ]
 
