@@ -2,6 +2,7 @@ import { lazy } from 'react'
 import { IRouteProps } from '../IRoute'
 
 const LineChart = lazy(() => import('../../views/Charts/lineChart'))
+const DynamicBarChart = lazy(() => import('../../views/Charts/dynamicBarChart'))
 const ThreeDimensionalCylinder = lazy(() => import('../../views/Charts/threeDimensionalCylinder'))
 const PolygonColumnDiagram = lazy(() => import('../../views/Charts/polygonColumnDiagram'))
 const RingRatioBarChart = lazy(() => import('../../views/Charts/ringRatioBarChart'))
@@ -16,6 +17,14 @@ const routesMap: IRouteProps[] = [
     meta: {
       requiresAuth: false,
       title: '折线图',
+    },
+  },
+  {
+    path: '/echarts/dynamicBarChart',
+    exact: true,
+    component: DynamicBarChart,
+    meta: {
+      title: '动态柱状图',
     },
   },
   {
